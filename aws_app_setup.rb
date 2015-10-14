@@ -29,7 +29,7 @@ end
 
 def aws_versioning_setup(profile, bucket)
  <<-VERSIONING_COMMANDS
-aws --profile #{profile} s3api put-bucket-versioning --bucket ${bucket} --versioning-configuration Status=Enabled
+aws --profile #{profile} s3api put-bucket-versioning --bucket #{bucket} --versioning-configuration Status=Enabled
   VERSIONING_COMMANDS
 end
 
